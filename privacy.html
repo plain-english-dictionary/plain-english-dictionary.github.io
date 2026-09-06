@@ -17,10 +17,11 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Plain English Dictionary for iOS · Effective 2 September 2026</p>
+<p class="meta">Plain English Dictionary for iOS and Android · Effective 6 September 2026</p>
 
 <p>Plain English Dictionary is an offline English dictionary. This page explains what
-information is handled when you use the app, and by whom.</p>
+information is handled when you use the app, and by whom. It covers both the iOS
+and the Android version; where the two differ, the difference is stated.</p>
 
 <h2>What the app itself collects</h2>
 <p>Nothing. The app does not ask you to create an account and does not send any
@@ -34,11 +35,14 @@ information to us.</p>
 
 <h2>Advertising and analytics</h2>
 <p>The app is free and supported by advertising. To serve ads and to understand how
-the app is used, it includes two software development kits (SDKs) from Google:</p>
+the app is used, it includes three software development kits (SDKs) from Google:</p>
 <ul>
   <li><strong>Google AdMob</strong>, which shows a banner advertisement in the app.</li>
   <li><strong>Google Analytics for Firebase</strong>, which records anonymous usage
       events such as when the app is opened.</li>
+  <li><strong>Firebase Crashlytics</strong>, which reports crashes so they can be
+      fixed. A crash report describes the state of the app and the device at the
+      moment it stopped; it does not include the words you looked up.</li>
 </ul>
 <p>These SDKs may collect information such as your device type and operating system
 version, your IP address and the approximate location derived from it, identifiers
@@ -49,9 +53,20 @@ You can read more about
 <a href="https://policies.google.com/technologies/partner-sites">how Google uses
 information from apps that use its services</a>.</p>
 
-<p>The app does not request permission under Apple's App Tracking Transparency
-framework, so it does not access the advertising identifier (IDFA) and does not track
-you across other companies' apps or websites.</p>
+<h2>The advertising identifier</h2>
+<p>Mobile platforms give each device a resettable advertising identifier, which lets
+advertisers recognise the same device across different apps. The two versions of this
+app treat it differently, because the platforms do.</p>
+<ul>
+  <li><strong>On iOS</strong>, the app does not request permission under Apple's App
+      Tracking Transparency framework. It therefore has no access to the advertising
+      identifier (IDFA), does not track you across other companies' apps or websites,
+      and every advertisement it shows is non-personalised.</li>
+  <li><strong>On Android</strong>, the app does use the advertising ID, so the
+      advertisements it shows may be personalised — chosen using what Google knows
+      about the device from other apps. This applies unless you have opted out on your
+      device, or, in the regions listed below, unless you have consented.</li>
+</ul>
 
 <h2>Your choices</h2>
 <ul>
@@ -59,9 +74,13 @@ you across other companies' apps or websites.</p>
       the app asks for your consent before Google may use your data for personalised
       advertising. You can change your choice at any time from
       <em>Settings → Privacy Options</em> inside the app.</li>
-  <li><strong>Everywhere else</strong>, ads are served without the advertising
-      identifier. You can further limit ad personalisation through your device's
-      Settings → Privacy &amp; Security → Apple Advertising.</li>
+  <li><strong>Everywhere else</strong>, the iOS version still serves only
+      non-personalised ads, because it never has the identifier. The Android version
+      serves personalised ads unless you opt out on the device.</li>
+  <li><strong>On any device, you can opt out</strong> of ad personalisation without
+      uninstalling the app: on iOS through Settings → Privacy &amp; Security → Apple
+      Advertising, and on Android through Settings → Privacy → Ads, where you can
+      also delete the advertising ID altogether.</li>
 </ul>
 
 <h2>Children</h2>
